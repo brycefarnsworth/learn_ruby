@@ -68,5 +68,9 @@ describe "#translate" do
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
   # * retain the punctuation from the original phrase
+  it "keeps capitalized words capitalized" do
+    s = translate("Iron Man the Incredible Hulk Captain America and Thor")
+	s.should == "Ironay Anmay ethay Incredibleay Ulkhay Aptaincay Americaay anday Orthay"
+  end
 
 end
